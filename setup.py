@@ -14,7 +14,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown", # required if using a md file for long desc
     license="MIT",
-    url="https://github.com/jiobu1/lambdata-jiobu1_1",
+    url="https://github.com/jiobu1/lambdata-jiobu1",
     #keywords="",
     packages=find_packages() # ["lambdata-jiobu1_1"]
 )
