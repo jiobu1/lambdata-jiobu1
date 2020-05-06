@@ -4,6 +4,6 @@
 
 TODO
 
-## Usage an
+## Usage
 
 TODO

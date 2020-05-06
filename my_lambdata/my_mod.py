@@ -1,6 +1,10 @@
 #my_mod.py
 
 def enlarge(n):
+    """
+    Param n is a number
+    Function will enlarge the number
+    """
     return n*100
 
 
@@ -8,7 +12,7 @@ if __name__ == "__main__":
     # only run the code below if executing the script from the 
     # command line, otherwise don't run it, like if you are 
     # importing the function
-    
+
     x = 5
     print(enlarge(x))
 
