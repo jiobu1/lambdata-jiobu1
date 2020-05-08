@@ -3,30 +3,28 @@
 from pandas import DataFrame
 
 
-
 def add_state_names(my_df):
-    #TODO: add a column of correstponding state names
-    #dict with abbrev/name.mappingsc
-    #create a new columns that is a copy of the first. but mapped with names
-    #concat with axis=1
+    """
+    Adds a column of state names to accompany a corresponding column of state abbreviation.
 
+    Params:
+        my_df (pandas.DataFrame) has a column called "abbrev" with state abbreviations.
+
+    Returns:
+        copy of the orginal dataframe, with another column
+    """
     new_df = my_df.copy()
-    
-    names_map = {"CA":"California", "CO":"Colorado", "CT":"Connecticut"}
-     
-    # type(my_df["abbrev"]) #> class 'pandas.core.series.Series
-
+    names_map = {"CA": "California", "CO": "Colorado", "CT": "Connecticut"}
     new_df["name"] = new_df["abbrev"].map(names_map)
-    # see: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.map.html
-     
+    # see:
+    # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.map.html
     return my_df
-
 
 
 if __name__ == "__main__":
 
-    df = DataFrame({"abbrev":["CA","CO","CT","DC","TX"]})
+    df = DataFrame({"abbrev": ["CA", "CO", "CT", "DC", "TX"]})
     print(df.head())
-    
+
     df2 = add_state_names(df)
     print(df2.head())
