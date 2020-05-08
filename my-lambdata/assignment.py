@@ -24,8 +24,9 @@ def add_state_names(my_df):
 
 
 if __name__ == "__main__":
-    df = DataFrame({"abbrev":["CA", "CO", "CT", "DC", "TX"]})
-    print(df.head())
 
+    df = DataFrame({"abbrev":["CA","CO","CT","DC","TX"]})
+    print(df.head())
+    
     df2 = add_state_names(df)
     print(df2.head())
