@@ -1,4 +1,4 @@
-# lambdata-jiobu1_1
+# lambdata-jiobu1
 
 ## Installation
 
