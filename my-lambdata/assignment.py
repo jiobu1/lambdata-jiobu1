@@ -1,9 +1,9 @@
 # State abbreviateion  --> Full Name and vice verse. FL -> Florida, etc
 
-from pandas import DataFrame
+from pandas import DataFrame #class
 
 
-def add_state_names(my_df):
+def add_state_names(my_df): #add_state_names = function; my_df = is the object
     """
     Adds a column of state names to accompany a corresponding column of state abbreviation.
 
@@ -24,8 +24,9 @@ def add_state_names(my_df):
 if __name__ == "__main__":
 
     df = DataFrame({"abbrev": ["CA", "CO", "CT", "DC", "TX"]})
-    breakpoint()
-    print(df.head())
+    #breakpoint()
+    print(df.columns) #property
+    print(df.head()) #method
 
     df2 = add_state_names(df)
     print(df2.head())
