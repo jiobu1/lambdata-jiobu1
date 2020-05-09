@@ -14,11 +14,11 @@ def add_state_names(my_df): #add_state_names = function; my_df = is the object
         copy of the orginal dataframe, with another column
     """
     new_df = my_df.copy()
-    names_map = {"CA": "California", "CO": "Colorado", "CT": "Connecticut"}
+    names_map = {"CA": "California", "CO": "Colorado", "CT": "Connecticut", "DC": "Washington DC", "TX": "Texas"}
     new_df["name"] = new_df["abbrev"].map(names_map)
     # see:
     # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.map.html
-    return my_df
+    return new_df
 
 
 if __name__ == "__main__":
