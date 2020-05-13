@@ -8,7 +8,7 @@ class DataProcessor ():
          Params:
             my_df (pandas.DataFrame) has a column called "abbrev" with state abbreviations.
         """
-        self.df = my_df
+        self.df = my_df #storing a dataframe on an instance
 
     def add_state_names(self): #add_state_names = function; my_df = is the object
         """
@@ -21,14 +21,13 @@ class DataProcessor ():
         self.df["name"] = self.df["abbrev"].map(names_map)
         # see:
         # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.map.html
-        return self.df
 
 
 if __name__ == "__main__":
     df = DataFrame({"abbrev":["CA","CO","CT","DC","TX"]})
 
     processor = DataProcessor(df)
-    print(processor.df.head())
+    print(processor.df.head()) #invoking a method on an attribute of an object
     
     processor.add_state_names()
     print(processor.df.head())

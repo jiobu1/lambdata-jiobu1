@@ -2,9 +2,9 @@
 
 from pandas import DataFrame
 
-class MyFrame(DataFrame):
+class MyFrame(DataFrame): #writing a class that inherits from the DataFrame class
 
-    def add_state_names(self):
+    def add_state_names(self): #adding methods to the DataFrame class
         """
         Adds a column of state names to accompany a corresponding column of state abbreviation.
         """
