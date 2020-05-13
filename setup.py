@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="lambdata-jiobu1",  # the name that you will install via pip
-    version="1.1",
+    version="1.11",
     author="Jisha Obukwelu",
     author_email="jisha-obukwelu@lambdastudents.com",
     description="Enlarge Function",
