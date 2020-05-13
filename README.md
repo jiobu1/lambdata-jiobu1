@@ -2,7 +2,10 @@
 
 ## Installation
 
-TODO
+```sh
+pip install -i https://test.pypi.org/simple/ lambdata-jiobu1
+```
+
 
 ## Usage
 

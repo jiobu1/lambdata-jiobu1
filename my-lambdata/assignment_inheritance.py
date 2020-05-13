@@ -3,6 +3,7 @@
 from pandas import DataFrame
 
 class MyFrame(DataFrame): #writing a class that inherits from the DataFrame class
+    # most classes do not have an argument passing through
 
     def add_state_names(self): #adding methods to the DataFrame class
         """
@@ -17,7 +18,7 @@ if __name__ == "__main__":
     #df = DataFrame({"abbrev":["CA","CO","CT","DC","TX"]})
 
     my_frame = MyFrame({"abbrev":["CA","CO","CT","DC","TX"]})
-    print(my_frame.columns)
+    print(my_frame.columns) #invoking DataFrame methods on self
     print(my_frame.head())
 
     my_frame.add_state_names()
