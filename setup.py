@@ -17,5 +17,5 @@ setup(
     license="MIT",
     url="https://github.com/jiobu1/lambdata-jiobu1",
     # keywords="",
-    packages=find_packages(["lambdata-jiobu1_1"])  # find_packages() #['my_lambdata']
+    packages=find_packages()  # find_packages() #['my_lambdata']
 )

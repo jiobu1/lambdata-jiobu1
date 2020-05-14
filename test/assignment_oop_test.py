@@ -22,6 +22,6 @@ class TestDataProcessor(unittest.TestCase):
         self.assertEqual(processor.df.iloc[0]["abbrev"], "CA")
         self.assertEqual(processor.df.iloc[0]["name"], "Cali")
 
-        
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,3 +1,3 @@
-#init.py
+#conftest.py
 
 #Nothing to see here
