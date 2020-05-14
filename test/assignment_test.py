@@ -5,7 +5,7 @@ from pandas import DataFrame
 
 from my_lambdata.assignment import add_state_names 
 # add __init__.py
-# python -m my_lambdata/assignment.py (to run)
+# python -m test.assignment_test (to run)
 
 #OBJECTIVE:test the add_state_names() finction from teh my_lambdata package
 
