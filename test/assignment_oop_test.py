@@ -20,7 +20,7 @@ class TestDataProcessor(unittest.TestCase):
 
         self.assertEqual(list(processor.df.columns), ["abbrev", "name"])
         self.assertEqual(processor.df.iloc[0]["abbrev"], "CA")
-        self.assertEqual(processor.df.iloc[0]["name"], "Cali")
+        self.assertEqual(processor.df.iloc[0]["name"], "California")
 
 
 if __name__ == "__main__":
