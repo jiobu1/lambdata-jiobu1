@@ -21,7 +21,9 @@ class TestStringMethods(unittest.TestCase):
         s = 'hello world'
         self.assertEqual(s.split(), ['hello', 'world'])
         # check that s.split fails when the separator is not a string
-        with self.assertRaises(TypeError):
+        with self.assertRaises(TypeError): 
+            #Context managers allow you to allocate and release resources precisely when you want to.
+            # https://book.pythontips.com/en/latest/context_managers.html 
             s.split(2)
 
 if __name__ == '__main__':
