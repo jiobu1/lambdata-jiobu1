@@ -1,4 +1,4 @@
-#assignment_oop.py
+#assignment_inheritance.py
 
 from pandas import DataFrame
 

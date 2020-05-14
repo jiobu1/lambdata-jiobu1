@@ -1,4 +1,4 @@
-#area_test
+#rectangles_test
 
 import unittest #the module
 
